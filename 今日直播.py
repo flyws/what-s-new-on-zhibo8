@@ -16,12 +16,12 @@ today = soup.find(title=i)
 # today1 = soup.find_all(class_='content')
 # for i in today1:
 #    print i.li
-print soup
+# print soup
 
-# today1 = today.next.next.next.next
-# for i in today1.ul:
-#     if i.next.string == None:
-#         pass
-#     else:
-#         print i.next.string + '\n' + i.next.next.string
-#         print '-'*30
+today1 = today.next.next.next.next
+for i in today1.ul:
+    if i.next.string == None:
+        pass
+    else:
+        print i.next.string + '\n' + i.next.next.string
+        print '-'*30
